@@ -1,0 +1,6 @@
+{
+  "id":"chef",
+  "ssh_keys": ["ssh-rsa AAAAB3Ntruncated"],
+  "groups":["staff"],
+  "shell":"\/bin\/bash"
+}

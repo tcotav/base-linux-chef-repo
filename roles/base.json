@@ -1,0 +1,52 @@
+{
+  "name":"base",
+  "chef_type":"role",
+  "json_class":"Chef::Role",
+  "default_attributes": {
+    /*
+    "nagios": {
+      "user":"nagios",
+      "group":"nagios",
+      "plugin_dir":"/usr/lib/nagios/plugins",
+      "multi_environment_monitoring":"false",
+      "client":{
+        "install_method":"package"
+      },
+      "plugins":{
+        //"url":"",
+        //"version":"",
+        //"checksum":""
+      },
+      "nrpe":{
+        "home":"/usr/lib/nagios",
+        "conf_dir":"", //location of nrpe configuration
+        //"ssl_lib_dir":  //ssl directory used by NRPE
+        //"log_facility":nil,
+        "pidfile":"",
+        "debug":0,
+        //"connection_timeout":nil,
+        "conf_dir":"/etc/nagios"
+        //"packages":""
+        //"url": // url to retrieve nrpe source
+        //"version": //version of nrpe source to download
+        //"checksum": //checksum of nrpe source tarball
+      }
+    },*/
+    "ntp": {
+      "servers" : [
+        "0.pool.ntp.org",
+        "1.pool.ntp.org",
+        "2.pool.ntp.org"
+      ]
+    }
+  },
+  "description": "Base role for all unix systems",
+  "run_list": [
+    "recipe[linux_base]",
+    "recipe[ntp]"
+  ],
+  "env_run_list": {
+  },
+  "override_attributes":{
+  }
+}
