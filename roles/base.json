@@ -3,6 +3,13 @@
   "chef_type":"role",
   "json_class":"Chef::Role",
   "default_attributes": {
+    "authorization": {
+        "sudo": {
+          "groups": ["staff"],
+          "users": ["chef"],
+          "passwordless": "true"
+        }
+      },
     /*
     "nagios": {
       "user":"nagios",

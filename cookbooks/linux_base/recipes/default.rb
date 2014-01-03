@@ -31,6 +31,8 @@ node.default['openssh']['server']['password_authentication'] = "no"
 include_recipe 'openssh'
 
 # make sudo password-less as well
-node.default['authorization']['sudo']['passwordless']=true
-node.default['authorization']['sudo']['groups']=['staff']
+#node.default['authorization']['sudo']['passwordless']=true
+#node.default['authorization']['sudo']['groups']=['staff']
+
 include_recipe 'sudo'
+Chef::Log.error('End of Linux Base')

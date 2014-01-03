@@ -1,6 +1,7 @@
 {
   "id":"chef",
-  "ssh_keys": ["ssh-rsa AAAAB3Ntruncated"],
-  "groups":["staff"],
+  "ssh_keys": ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC76exUedwZnyx+N0WZCB/Qsx3GmDL4CXua37giwmFfdChJLI+k0EMl1Gj+srAfU+kFFceg7i4kix4mw//Ymr0rcYqW7PXLVDqmYMX2bC6FuaLR0TtXeBx4VG172LA9mCP7jJWSiyBWFnCg/neIoFJUeBU98CGBnhyv5mUEISuye8CG33HdP9UbCiH9cszpegJEfG+ocAKtfAv99qiu/4321XOOf+3vTKkMPewxVz/rbJcZhCx2e/928H4k+O1jv5nueVjas2u7aBbB1PDHInFGDx8fMOTRYVa4gl5XMfTPOO7uhwNKnzVIIUNB4QTZKSc3a22breyWma3Hb4HnZzsX tcotav@gmail.com"
+  ],
+  "groups":["staff", "sysadmin"],
   "shell":"\/bin\/bash"
 }
