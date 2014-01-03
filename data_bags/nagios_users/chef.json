@@ -1,0 +1,5 @@
+{
+  "id":"chef",
+  "htpasswd": "{SHA}1fLlx3BUxEwscqGwF97KBvxjfJk=",
+  "groups":"staff"
+}

@@ -1,0 +1,14 @@
+{
+  "name":"monitoring",
+  "description": "nagios server",
+  "run_list":[
+    "recipe[apt]",
+    "recipe[nagios::server]"
+  ],
+
+  "default_attributes":{
+    "nagios":{
+      "server_auth_method":"htauth"
+    }
+  }
+}

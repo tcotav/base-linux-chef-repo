@@ -1,6 +1,8 @@
 # opscode cookbooks
 site :opscode
-cookbook 'nagios'
+
+# nagios failed to install here -- had to manually install
+#cookbook 'nagios'
 cookbook 'ntp'
 
 # local cookbooks

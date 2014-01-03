@@ -14,7 +14,7 @@ recipe 'nagios::pagerduty', 'Integrates contacts w/ PagerDuty API'
 %w{ apache2 build-essential php nginx nginx_simplecgi }.each do |cb|
   depends cb
 end
-depends 'yum', '< 3.0'
+depends 'yum', '> 3.0'
 
 %w{ debian ubuntu redhat centos fedora scientific amazon oracle}.each do |os|
   supports os
