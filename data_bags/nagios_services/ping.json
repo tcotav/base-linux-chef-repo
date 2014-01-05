@@ -1,0 +1,7 @@
+{
+  "id": "ping",
+  "hostgroup_name": "linux",
+  "command_line": "$USER1$/check_nrpe -H $HOSTADDRESS$ -c check_ping -w 150,20% -c 250,30%"
+}
+
+
