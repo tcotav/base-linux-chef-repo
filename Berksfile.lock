@@ -1,13 +1,27 @@
 {
   "sources": {
-    "nagios": {
-      "locked_version": "5.1.0"
-    },
     "ntp": {
       "locked_version": "1.5.4"
     },
+    "openssh": {
+      "locked_version": "1.3.2"
+    },
+    "sudo": {
+      "locked_version": "2.3.0"
+    },
+    "users": {
+      "locked_version": "1.6.0"
+    },
+    "nagios": {
+      "locked_version": "5.1.1",
+      "git": "git://github.com/tas50/nagios.git",
+      "ref": "08e24d58c236e525e83c4aeb54dbc98dccc9e90b"
+    },
     "linux_base": {
       "path": "./cookbooks/linux_base"
+    },
+    "iptables": {
+      "locked_version": "0.12.0"
     },
     "apache2": {
       "locked_version": "1.8.14"
@@ -22,7 +36,7 @@
       "locked_version": "1.2.0"
     },
     "mysql": {
-      "locked_version": "4.0.14"
+      "locked_version": "4.0.18"
     },
     "openssl": {
       "locked_version": "1.1.0"
@@ -65,18 +79,6 @@
     },
     "perl": {
       "locked_version": "1.2.2"
-    },
-    "users": {
-      "locked_version": "1.6.0"
-    },
-    "openssh": {
-      "locked_version": "1.3.2"
-    },
-    "iptables": {
-      "locked_version": "0.12.0"
-    },
-    "sudo": {
-      "locked_version": "2.3.0"
     }
   }
 }

@@ -25,14 +25,8 @@ users_manage "staff" do
   action [:remove, :create]
 end
 
-# Make sure ssh is key-based only, block root login
-node.default['openssh']['server']['permit_root_login'] = "no"
-node.default['openssh']['server']['password_authentication'] = "no"
+# Other base recipes to include
 include_recipe 'openssh'
-
-# make sudo password-less as well
-node.default['authorization']['sudo']['passwordless']=true
-node.default['authorization']['sudo']['groups']=['staff']
-
 include_recipe 'sudo'
-Chef::Log.error('End of Linux Base')
+
+Chef::Log.info('End of Linux Base')
